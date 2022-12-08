@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{ background-color: black;
+        margin: 100px; 100px}
+
+#circle1 {
+    height: 300px;
+  width: 300px;
+  background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+  border-radius: 100%;
+  box-shadow: 4px 4px 40px 20px #5b0855;
+  margin: 0 auto;
+  }
+   
+
+  
+
+@keyframes okretanje{
+    0% {
+        
+        transform: rotate(0deg);
+    }
+    
+    100%{transform: rotate(360deg);}
+}
+
+#circle1{
+    animation-name: okretanje;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+#circle2 {
+
+    height:300px;
+    width: 300px;
+    background-color: #050210;
+    border-radius: 100%;
+    position: absolute;
+
+    margin: auto 0;
+    transform: scale(0.6);
+    
+    
+    
+}
+
+
+#circle3 {
+    height:300px;
+    width:300px;
+    background-color: #37353e;
+    opacity: 50%;;
+    border-radius: 100%;
+    transform: translateX(100px) translateY(100px);
+    position: absolute;
+
+    margin: auto 0;
+    
+    
+    
+}
+       
+       
+    @keyframes
+     pulsiranjekruga{
+    0%{ transform: scale(0.1);}
+    100% {transform: scale(0.8);}
+}
+       
+       
+       #circle3{
+           animation-name: pulsiranjekruga;
+           animation-duration: 2s;
+           animation-iteration-count: infinite;
+           transition-timing-function: linear;
+           animation-direction: alternate-reverse;
+           
+       }
+           
+
+    </style>
+</head>
+<body>
+   
+    <div id="circle1" class="circle"> 
+    
+
+        
+        <div id="circle2" class="circle">  <div id="circle3" class="circle"> </div>
+</div> 
+    
+
+</div>
+
+   
+   
+
+</body>
+</html>
